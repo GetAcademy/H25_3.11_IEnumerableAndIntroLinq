@@ -7,7 +7,9 @@
             string t = "Hallo";
 
             var t2 = t.Terje();
-            //var t2 = StringExtensions.Terje(t);
+            t.Xyz();
+            // var t2 = StringExtensions.Terje(t);
+            // StringExtensions.Xyz(t);
             Console.WriteLine(t2); // TerjeHalloTerje
         }
     }

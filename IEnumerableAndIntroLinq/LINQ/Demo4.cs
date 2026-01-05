@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace IEnumerableAndIntroLinq.LINQ
+﻿namespace IEnumerableAndIntroLinq.LINQ
 {
     internal class Demo4
     {
@@ -24,6 +20,10 @@ namespace IEnumerableAndIntroLinq.LINQ
             };
 
             var somePeople = people.Where(p => p.City == "Oslo");
+
+            var peopleArray = people.ToArray();
+            var somePeople2 = peopleArray.Where(p => p.City == "Oslo");
+
 
         }
     }

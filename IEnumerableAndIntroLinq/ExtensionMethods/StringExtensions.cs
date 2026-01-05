@@ -6,5 +6,11 @@
         {
             return "Terje" + s + "Terje";
         }
+
+        public static string Xyz(this string s)
+        {
+            return "Terje" + s + "Terje";
+        }
+
     }
 }
