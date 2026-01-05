@@ -7,8 +7,8 @@ Demo4.Run();
 
 
 /*
- IEnumerable og IEnumerator
- Extension methods
- Builder Pattern
- Grunnleggende LINQ
+ - IEnumerable og IEnumerator
+ - Extension methods
+ - Builder Pattern
+ => Grunnleggende LINQ
 */
