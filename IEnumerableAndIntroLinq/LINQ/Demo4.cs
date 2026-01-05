@@ -28,6 +28,19 @@
             var firstPersonA = people.First(); // gir den første - når du vet at det er minst 1
             var firstPersonB = people.FirstOrDefault(); // gir den første - når du IKKE vet at det er minst 1
             var firstInLarvik = people.FirstOrDefault(p => p.City == "Larvik");
+
+            var cityGroups = people.GroupBy(p => p.City);
+            foreach (var cityGroup in cityGroups)
+            {
+                Console.WriteLine("* " + cityGroup.Key);
+                foreach (var person in cityGroup)
+                {
+                    Console.WriteLine(person.Description);
+                }
+
+            }
+
+
             
 
 
