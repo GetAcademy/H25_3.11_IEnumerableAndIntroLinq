@@ -5,4 +5,6 @@
  Grunnleggende LINQ
 */
 
-Console.WriteLine("Hello, World!");
+using IEnumerableAndIntroLinq.Enumerating;
+
+Demo1.Run();
