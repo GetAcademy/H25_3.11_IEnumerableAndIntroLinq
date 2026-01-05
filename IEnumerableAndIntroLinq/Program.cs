@@ -3,7 +3,7 @@ using IEnumerableAndIntroLinq.Enumerating;
 using IEnumerableAndIntroLinq.ExtensionMethods;
 using IEnumerableAndIntroLinq.LINQ;
 
-Demo3.Run();
+Demo4.Run();
 
 
 /*

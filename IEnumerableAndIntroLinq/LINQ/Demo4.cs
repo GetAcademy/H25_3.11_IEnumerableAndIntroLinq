@@ -19,10 +19,34 @@
                 new Person("Jon", 41, "Stavern")
             };
 
-            var somePeople = people.Where(p => p.City == "Oslo");
+            var someDescriptions = people
+                .Where(p => p.City == "Oslo")
+                .OrderBy(p => p.Name)
+                .Reverse()
+                .Select(p => p.Description);
 
-            var peopleArray = people.ToArray();
-            var somePeople2 = peopleArray.Where(p => p.City == "Oslo");
+            var firstPersonA = people.First(); // gir den første - når du vet at det er minst 1
+            var firstPersonB = people.FirstOrDefault(); // gir den første - når du IKKE vet at det er minst 1
+            var firstInLarvik = people.FirstOrDefault(p => p.City == "Larvik");
+            
+
+
+            //var someDescriptions2 = 
+            //    from p in people
+            //    where p.City == "oslo"
+            //    select p.Description;
+
+            //var somePeople = people.Where(p => p.City == "Oslo");
+            //var someDescriptions = somePeople.Select(p => p.Description);
+
+            foreach (var description in someDescriptions)
+            {
+                Console.WriteLine(description);
+            }
+
+
+            //var peopleArray = people.ToArray();
+            //var somePeople2 = peopleArray.Where(p => p.City == "Oslo");
 
 
         }
