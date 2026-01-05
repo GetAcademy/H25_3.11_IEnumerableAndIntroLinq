@@ -6,5 +6,6 @@
 */
 
 using IEnumerableAndIntroLinq.Enumerating;
+using IEnumerableAndIntroLinq.ExtensionMethods;
 
-Demo1.Run();
+Demo2.Run();
